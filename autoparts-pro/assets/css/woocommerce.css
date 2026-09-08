@@ -1,0 +1,370 @@
+/**
+ * AutoParts Pro - WooCommerce Custom Styles
+ * 
+ * @package AutoParts_Pro
+ * @since 1.0.0
+ */
+
+/* ============================================
+   Product Cards
+   ============================================ */
+
+.woocommerce ul.products li.product {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.woocommerce ul.products li.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Wishlist Button */
+.app-wishlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.woocommerce ul.products li.product:hover .app-wishlist-btn {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.app-wishlist-btn:hover {
+    background: #dc2626;
+}
+
+.app-wishlist-btn:hover .icon-heart {
+    fill: #fff;
+}
+
+.icon-heart {
+    width: 18px;
+    height: 18px;
+    fill: #ccc;
+    transition: fill 0.3s ease;
+}
+
+/* Compatibility Badge */
+.app-compatibility-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 4px 10px;
+    background: #4CAF50;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3px;
+    z-index: 2;
+}
+
+.app-compatibility-badge.fits {
+    background: #4CAF50;
+}
+
+/* Part Number Display */
+.app-part-number {
+    margin-top: 8px;
+    color: #666;
+}
+
+.app-part-number small {
+    font-size: 12px;
+}
+
+/* ============================================
+   Single Product Page
+   ============================================ */
+
+.app-part-numbers {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.part-number-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.part-number-row:last-child {
+    border-bottom: none;
+}
+
+.part-number-row strong {
+    color: #333;
+}
+
+.part-number-row span {
+    color: #666;
+    font-family: monospace;
+}
+
+/* Vehicle Compatibility Section */
+.app-vehicle-compatibility {
+    margin: 30px 0;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.app-vehicle-compatibility h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.compatibility-list {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.vehicle-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.vehicle-item:last-child {
+    border-bottom: none;
+}
+
+.vehicle-item .dashicons-yes {
+    color: #4CAF50;
+}
+
+.app-check-fit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #dc2626;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.app-check-fit-btn:hover {
+    background: #b91c1c;
+}
+
+/* Share Buttons */
+.app-share-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.share-label {
+    font-weight: 600;
+    color: #666;
+}
+
+.share-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    border-radius: 50%;
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+    transform: translateY(-2px);
+}
+
+.share-btn.facebook:hover {
+    background: #3b5998;
+    color: #fff;
+}
+
+.share-btn.twitter:hover {
+    background: #1da1f2;
+    color: #fff;
+}
+
+.share-btn.pinterest:hover {
+    background: #bd081c;
+    color: #fff;
+}
+
+.share-btn.email:hover {
+    background: #666;
+    color: #fff;
+}
+
+.share-btn.copy-link:hover {
+    background: #4CAF50;
+    color: #fff;
+}
+
+/* ============================================
+   Cart & Checkout
+   ============================================ */
+
+.app-bulk-discount-info {
+    background: #fff8e1;
+    border: 1px solid #ffe082;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.app-bulk-discount-info p {
+    margin: 0;
+    color: #f57f17;
+    font-weight: 500;
+}
+
+/* ============================================
+   Product Tabs
+   ============================================ */
+
+.app-specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.app-specs-table th,
+.app-specs-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.app-specs-table th {
+    width: 30%;
+    font-weight: 600;
+    color: #333;
+    background: #f9f9f9;
+}
+
+.app-specs-table tr:hover {
+    background: #f5f5f5;
+}
+
+/* ============================================
+   Order Tracking
+   ============================================ */
+
+.app-order-tracking {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.app-order-tracking h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.app-tracking-form .form-row {
+    margin-bottom: 20px;
+}
+
+.app-tracking-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.app-tracking-form input[type="text"],
+.app-tracking-form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.tracking-result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* ============================================
+   Flash Deals
+   ============================================ */
+
+.flash-deal-banner {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.flash-deal-timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.timer-unit {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.timer-value {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.timer-label {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .app-wishlist-btn {
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+    .app-share-buttons {
+        flex-wrap: wrap;
+    }
+    
+    .app-specs-table th,
+    .app-specs-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
