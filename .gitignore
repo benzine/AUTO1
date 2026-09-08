@@ -1,21 +1,22 @@
 ```
-# WordPress/WooCommerce specific
-wp-content/cache/
-*.log
-*.tmp
+# Build artifacts
+assets/js/main.js
 
-# Dependencies
+# WordPress specific
+inc/core/
+backoffice/
+
+# Dependencies and build directories
 node_modules/
 vendor/
-
-# Build artifacts
-assets/css/*.css
-assets/js/*.js
+composer.lock
+*.log
+*.tmp
 
 # Environment
 .env
 .env.local
-.env.*
+*.env.*
 
 # Editors
 .vscode/
