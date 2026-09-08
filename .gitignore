@@ -1,26 +1,33 @@
 ```
+# Build artifacts
+assets/js/*.js
+inc/
+
 # Dependencies
 node_modules/
 
 # Logs and temp files
 *.log
 *.tmp
-
-# Environment
-.env
-.env.local
-*.env.*
+*.swp
 
 # Editors
 .vscode/
 .idea/
 
+# Environment
+.env
+.env.local
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
 # WordPress specific
 wp-content/cache/
 *.sql
-wp-config-local.php
-
-# Backup files
-*.bak
-*.backup
+*.sql.gz
 ```
