@@ -66,8 +66,9 @@ function autoparts_pro_init() {
     require_once AUTOPARTS_PRO_INC . 'custom-post-types.php';
     require_once AUTOPARTS_PRO_INC . 'custom-taxonomies.php';
     require_once AUTOPARTS_PRO_INC . 'template-functions.php';
-    require_once AUTOPARTS_PRO_INC . 'template-tags.php';
-    require_once AUTOPARTS_PRO_INC . 'widgets.php';
+    require_once AUTOPARTS_PRO_INC . 'template-tags/template-tags.php';
+    require_once AUTOPARTS_PRO_INC . 'widgets/widgets.php';
+    require_once AUTOPARTS_PRO_INC . 'customizer/customizer-settings.php';
     
     // Backoffice
     require_once AUTOPARTS_PRO_INC . 'backoffice/theme-options.php';
