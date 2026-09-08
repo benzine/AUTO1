@@ -1,0 +1,66 @@
+/*
+Theme Name:         AutoParts Pro
+Theme URI:          https://autopartspro.com
+Author:             AutoParts Pro Team
+Author URI:         https://autopartspro.com
+Description:        Premium Automotive Spare Parts WordPress Theme with 3D exploded view hero, headless backoffice, and advanced e-commerce features.
+Version:            1.0.0
+Requires at least:  6.0
+Tested up to:       6.4
+Requires PHP:       8.0
+License:            GPL v2 or later
+License URI:        http://www.gnu.org/licenses/gpl-2.0.txt
+Text Domain:        autoparts-pro
+Domain Path:        /languages
+Tags:               e-commerce, dark-mode, custom-menu, featured-images, theme-options, translation-ready, blog, custom-colors, custom-header, custom-logo, editor-style, flexible-header, footer-widgets, full-width-template, sticky-post, threaded-comments
+
+AutoParts Pro - Where Performance Meets Precision
+*/
+
+/* CSS Variables for theming */
+:root {
+    /* Color Palette */
+    --app-primary-red: #DC2626;
+    --app-obsidian-black: #0A0A0A;
+    --app-charcoal-grey: #2D2D2D;
+    --app-steel-grey: #6B7280;
+    --app-pure-white: #FFFFFF;
+    --app-off-white: #F5F5F5;
+    --app-burnt-orange: #EA580C;
+    
+    /* Typography */
+    --app-font-heading: 'Rajdhani', sans-serif;
+    --app-font-body: 'Inter', sans-serif;
+    --app-font-mono: 'JetBrains Mono', monospace;
+    
+    /* Spacing */
+    --app-spacing-xs: 0.25rem;
+    --app-spacing-sm: 0.5rem;
+    --app-spacing-md: 1rem;
+    --app-spacing-lg: 1.5rem;
+    --app-spacing-xl: 2rem;
+    --app-spacing-2xl: 3rem;
+    
+    /* Transitions */
+    --app-transition-fast: 150ms ease;
+    --app-transition-base: 300ms ease;
+    --app-transition-slow: 500ms ease;
+}
+
+/* Dark mode variables */
+[data-theme="dark"] {
+    --app-bg-primary: var(--app-obsidian-black);
+    --app-bg-secondary: var(--app-charcoal-grey);
+    --app-text-primary: var(--app-pure-white);
+    --app-text-secondary: var(--app-off-white);
+    --app-border-color: var(--app-steel-grey);
+}
+
+/* Light mode variables */
+[data-theme="light"] {
+    --app-bg-primary: var(--app-pure-white);
+    --app-bg-secondary: var(--app-off-white);
+    --app-text-primary: var(--app-obsidian-black);
+    --app-text-secondary: var(--app-charcoal-grey);
+    --app-border-color: var(--app-steel-grey);
+}
